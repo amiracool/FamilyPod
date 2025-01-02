@@ -25,50 +25,47 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   
   typeHeroText();
   
-  // Dynamic Content: Project Cards
-  const projects = [
-    {
-      title: "FamilyPod App",
-      description: "Revolutionising social work assessments.",
-      link: "#familypod-app",
+  gsap.registerPlugin(ScrollTrigger);
+
+// Horizontal Scroll Animation
+gsap.to(".scroll-container", {
+  x: () => `-${document.querySelector(".scroll-container").scrollWidth - window.innerWidth}px`,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".horizontal-scroll",
+    start: "top top",
+    end: () => `+=${document.querySelector(".scroll-container").scrollWidth}`,
+    scrub: true,
+    pin: true,
+    anticipatePin: 1,
+  },
+});
+// Intro Zoom Animation
+gsap.from(".intro h1", {
+    scale: 0.8,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".intro",
+      start: "top center",
+      end: "bottom top",
+      scrub: true,
     },
-    {
-      title: "Social Work Ethics Tool",
-      description: "Ensuring ethical excellence in social work.",
-      link: "#ethics-tool",
-    },
-  ];
-  
-  const projectContainer = document.querySelector("#projects .project-grid");
-  
-  projects.forEach((project) => {
-    const card = document.createElement("div");
-    card.className = "project-card";
-  
-    card.innerHTML = `
-      <h3>${project.title}</h3>
-      <p>${project.description}</p>
-      <a href="${project.link}" class="btn">Learn More</a>
-    `;
-  
-    projectContainer.appendChild(card);
   });
   
-  // Scroll-to-Top Button
-  const scrollToTopButton = document.createElement("button");
-  scrollToTopButton.textContent = "↑";
-  scrollToTopButton.className = "scroll-to-top";
-  document.body.appendChild(scrollToTopButton);
-  
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      scrollToTopButton.style.display = "block";
-    } else {
-      scrollToTopButton.style.display = "none";
-    }
-  });
-  
-  scrollToTopButton.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  // Panel Zoom Animation
+  gsap.utils.toArray(".panel").forEach((panel) => {
+    gsap.from(panel, {
+      scale: 0.9,
+      opacity: 0.5,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: panel,
+        start: "left center",
+        end: "right center",
+        scrub: true,
+      },
+    });
   });
   

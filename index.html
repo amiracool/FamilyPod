@@ -3,56 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FamilyPod - Innovating Sociotechnology</title>
+  <title>FamilyPod Tools</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <a href="#" class="logo">FamilyPod</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-content">
-      <h1>FamilyPod</h1>
-      <p>Empowering social work through innovative technology.</p>
-      <a href="#projects" class="btn gradient">Explore Projects</a>
-    </div>
-  </header>
-  <main>
-    <section id="about" class="about">
-      <h2>About FamilyPod</h2>
-      <p>We are a think tank focused on creating tools, research, and technology to revolutionise social work practices and empower change-makers.</p>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="genogram.html">Genogram</a>
+    <a href="#chronology">Chronology</a>
+    <a href="#case-recordings">Case Recordings</a>
+    <a href="#meeting-automation">Meeting Automation</a>
+    <a href="#threshold">Threshold Standardisation</a>
+    <a href="#report">Report Automation</a>
+    <a href="#therapeutic-workflows">Therapeutic Workflows</a>
+  </nav>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to FamilyPod</h1>
+    <p>Empowering social workers with innovative tools for better care and outcomes.</p>
+    <a href="#genogram" class="cta-button">Get Started</a>
+  </div>
+</section>
+
+  <!-- Genogram Section -->
+  <section id="genogram">
+    <h1>Genogram</h1>
+    <iframe src="genogram.html" style="border: none; width: 100%; height: 700px;" title="Genogram Tool"></iframe>
+  </section>
+
+  <!-- Chronology Section -->
+  <section id="chronology">
+    <h1>Chronology</h1>
+    <iframe src="chronology.html" style="border: none; width: 100%; height: 700px;" title="Genogram Tool"></iframe>
+  </section>
+
+  <!-- Case Recordings Section -->
+  <section id="case-recordings">
+    <h1>Case Recordings</h1>
+    <iframe src="case-recordings.html" style="border: none; width: 100%; height: 700px;" title="Genogram Tool"></iframe>
+  </section>
+
+  <!-- Meeting Automation Section -->
+  <section id="meeting-automation">
+    <h1>Meeting Automation</h1>
+    <p>Placeholder for Meeting Automation tool.</p>
+  </section>
+
+    <!-- Case Summaries Section -->
+    <section id="case-summaries">
+      <h1>Case Summaries </h1>
+      <p>Placeholder for Case Summaries Automation tool.</p>
     </section>
-    <section id="projects" class="projects">
-      <h2>Our Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>FamilyPod App</h3>
-          <p>Revolutionising social work assessments.</p>
-          <a href="#familypod-app" class="btn gradient">Learn More</a>
-        </div>
-        <div class="project-card">
-          <h3>Social Work Ethics Tool</h3>
-          <p>Ensuring ethical excellence in social work.</p>
-          <a href="#ethics-tool" class="btn gradient">Learn More</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <p>&copy; 2024 FamilyPod. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://twitter.com/your-profile" target="_blank"><i class="fab fa-twitter"></i></a>
+
+  <!-- Threshold Standardisation Section -->
+  <section id="threshold">
+    <h1>Threshold Standardisation</h1>
+    <p>Placeholder for Threshold Standardisation tool.</p>
+  </section>
+
+  <!-- Report Automation Section -->
+  <section id="report">
+    <h1>Report Automation</h1>
+    <p>Placeholder for Report Automation tool.</p>
+  </section>
+
+  <!-- Therapeutic Workflows Section -->
+  <section id="therapeutic-workflows">
+    <h1>Therapeutic Workflows</h1>
+    <p>Explore our tools for various therapeutic workflows:</p>
+    <div class="workflow-buttons">
+      <a href="/domestic-abuse" class="workflow-link">Domestic Abuse</a>
+      <a href="/cce" class="workflow-link">CCE</a>
+      <a href="/substance-misuse" class="workflow-link">Substance Misuse</a>
+      <a href="/fabricated-illness" class="workflow-link">Fabricated Illness</a>
+      <a href="/parenting-toolkit" class="workflow-link">Parenting Toolkit</a>
+      <a href="/harmful-sexual-behaviour" class="workflow-link">Harmful Sexual Behaviour</a>
     </div>
-  </footer>
-  <script src="homepage.js"></script>
+  </section>
+  
+
 </body>
 </html>
