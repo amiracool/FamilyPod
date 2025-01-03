@@ -3,7 +3,7 @@
 An innovative platform providing tools for social workers to complete assessments and standardise social care nationwide in the UK. 
 
 Description
-FamilyPod is designed to support social workers by streamlining assessments and offering interactive tools to help families navigate challenges. The MVP includes features like therapeutic games such as Romance Roulette and Trust Tower, which aim to teach young people about healthy relationships. The platform simplifies workflows, allowing social workers to focus on what matters most—helping families. 
+FamilyPod is designed to support social workers by streamlining assessments and offering interactive tools to help families navigate challenges. The platform simplifies workflows, allowing social workers to focus on what matters most—helping families. 
 Features.
 
 
